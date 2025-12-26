@@ -1,0 +1,11 @@
+/ {
+    zmk,split {
+        compatible = "zmk,split-serial";
+        status = "okay";
+
+        serial {
+            // TRRS data line on pin 006 -> P0.06
+            gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
+        };
+    };
+};
